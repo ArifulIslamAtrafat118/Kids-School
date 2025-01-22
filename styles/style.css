@@ -211,6 +211,13 @@
 
 }
 
+
+/* Styles for Footer Section  */
+#footer-section{
+    height: 40rem;
+    background-color: rgb(1, 172, 253);
+}
+
 /* Styles For Mobile View */
 @media screen and (max-width:575px){
     .nev{
