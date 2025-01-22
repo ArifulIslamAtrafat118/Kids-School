@@ -29,6 +29,9 @@
 .color-4{
     color:rgb(93, 88, 239);
 }
+.white{
+    color: white;
+}
 .black{
     color:black;
 }
@@ -66,10 +69,10 @@
     gap: 2rem;
     font-size: 1.25rem;
 }
-.nev ul li{
+ul li{
     list-style: none;
 }
-.nev .links li a{
+li a{
     text-decoration: none;
 }
 .contact-btn{
@@ -214,8 +217,34 @@
 
 /* Styles for Footer Section  */
 #footer-section{
-    height: 40rem;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    gap:6rem;
     background-color: rgb(1, 172, 253);
+    color: white;
+    padding: 7.69rem 14.25rem 10.88rem 8.75rem;
+}
+.web-logo-and-name{
+    align-items: center;
+}
+.cullam-1{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.cullam-1 h1{
+    font-size: 2.63rem;
+    font-weight: 700;
+}
+.cullam-1 p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.56rem;
+}
+.footer-links{
+    flex-direction: column;
+    gap:1.25rem;
+    margin-top: 2rem;
 }
 
 /* Styles For Mobile View */
@@ -279,7 +308,8 @@
         display: none;
     }
     .stories-right-card-container{
-        gap: 0.73rem;
-        grid-template-columns: repeat(2, 1fr);  
+        gap: 0.74rem;
+        width: calc(100% - 0.74rem);
     }
+   
 }
