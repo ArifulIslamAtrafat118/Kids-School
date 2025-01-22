@@ -1,0 +1,244 @@
+/* Font-Familly Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* Font-Familly Raleway  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font> {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.raleway-font{
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* Shared Styles */
+.display-flex{
+    display: flex;
+}
+.orange-1{
+    color: rgb(254, 163, 1);
+}
+.sky-blue{
+    color:rgb(1, 172, 253);
+}
+.color-3{
+    color: rgb(5, 212, 223);
+}
+.color-4{
+    color:rgb(93, 88, 239);
+}
+.black{
+    color:black;
+}
+.black-button{
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: black;
+    color:white;
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem 3rem;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* Header Section Styles */
+
+
+/* Nevigation Styles */
+.nev{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 8.75rem ;
+}
+.nev .web-name-logo{
+    gap: 1rem;
+}
+.nev #web-name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nev .links{
+    gap: 2rem;
+    font-size: 1.25rem;
+}
+.nev ul li{
+    list-style: none;
+}
+.nev .links li a{
+    text-decoration: none;
+}
+.contact-btn{
+    background-color: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    padding:1rem 3.75rem;
+}
+
+
+/* Banner Styles */
+
+.banner{
+    /* height: 35.94rem; */
+    height: auto;
+    margin: 0rem 8.75rem ;
+    gap:3.1rem;
+    align-items: center;
+    justify-content: center;
+    /* background-image:  */
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.banner-content .banner-titel{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.81rem;
+}
+.banner-content .banner-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.56rem;
+}
+
+/* Main Section Styles */
+/* .main-section{
+    /* background-size: 100%;
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
+} */
+.heading-2{
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.standard-curriculum{
+    padding: 3.75rem 8.75rem;
+    background-image: url('/assets/bg.png');
+    background-size: cover;
+}
+.curriculam-card-container{
+    gap:1.75rem;
+}
+.curriculam-card{
+    box-sizing: border-box;
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    padding: 3.25rem 2.5rem 3.63rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.25rem;
+}
+.kinder{
+    border: 0.94px solid rgb(222, 245, 255);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.elementary{
+    border: 0.94px solid rgb(255, 244, 220);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.middle{
+    border: 0.94px solid rgb(242, 232, 255);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.curriculam-card .card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+.card-description{
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.reed-more a{
+    text-decoration: none;
+}
+.our-stories{
+    /* background-image: url('/assets/bg.png'); */
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    height: 63.62rem;
+    padding: 3.75rem 8.75rem;
+}
+
+.our-stories-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.24rem;
+}
+.stories-right-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+.stories-card{
+    border-radius: 1rem;
+    background-color: white;
+}
+
+/* Styles For Mobile View */
+@media screen and (max-width:575px){
+    .nev{
+        width: auto;
+        box-sizing: border-box;
+        border: 0.5px solid rgb(254, 163, 1);
+        padding:0.75rem 1rem;
+    }
+    #web-name-container{
+        display: none;
+    }
+    .nev .links, .contact-btn-container{
+        display: none;
+    }
+    .banner{
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-direction: column-reverse;
+        height: auto;
+        width: auto;
+    }
+    .banner .banner-image img{
+        width: 100%;
+    }
+    .banner-content{
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-content .banner-titel{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+    .banner-content .banner-description{
+        text-align: center;
+    }
+    .standard-curriculum{
+        padding: 2.5rem 1rem 1.25rem;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    .curriculam-card-container{
+        flex-direction: column;
+        height: auto;
+        gap: 0.75rem;
+    }
+    .our-stories{
+        display: none;
+        padding: 0rem 1rem;
+    }
+}
